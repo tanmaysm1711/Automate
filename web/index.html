@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avira Fashions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="initial_loader"></div>
+    <div class="avira_fashions">
+        <p class="greeting">Welcome to Automate!</p>
+        <div class="size">
+            <div class="width">
+                <p class="filter_name" style="margin-bottom: 15px;">Width</p>
+                <div class="width_chip_container">
+                    <div class="chip" style="margin-right: 7px;">
+                        <input type="checkbox" id="36_chip_checkbox" value="36" name="width">
+                        <div class="filter_name_chip" id="36_chip" style="background: #FFFFFF; border: 1px solid #78D4B3;">
+                            <p class="chip_name">36</p>
+                        </div>
+                    </div>
+                    <div class="chip" style="margin-inline: 7px;">
+                        <input type="checkbox" id="58_chip_checkbox" value="58" name="width">
+                        <div class="filter_name_chip" id="58_chip" style="background: #FFFFFF; border: 1px solid #A678D4;">
+                            <p class="chip_name">58</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="length">
+                <p class="filter_name">Length</p>
+                <input class="length_input" type="number" placeholder="Enter Length">
+            </div>
+        </div>
+        <div class="select_category_container">
+            <p class="filter_name">Category</p>
+            <div class="select_category_button">
+                <span class="btn-text">Select Category</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="category_list_container">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="category_list_search_input" spellcheck="false" type="text" placeholder="Search">
+                </div>
+                <ul class="category_list_items">
+                    <!-- Will be populated by the list of categories -->
+                </ul>
+            </div>
+        </div>
+        <div class="client_phone_number">
+            <p class="filter_name">Client Phone Number</p>
+            <input class="client_phone_number_input" type="number" placeholder="Enter Phone Number">
+        </div>
+        <button class="generate_ready_stock_button">
+            <p class="button_text">Generate Ready Stock</p>
+            <div class="loader"></div>
+        </button>
+        <button class="rename_files_button">
+            <p class="button_text">Rename Files</p>
+            <div class="loader"></div>
+        </button>
+    </div>
+    <div class="snack_bar"></div>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
